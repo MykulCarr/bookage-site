@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Bookage: a fox squirrel at its wooden crate (inspired by the owner's "Squirrel Cafe" photo).
+       The crate's painted sign is a bookmark ribbon: the bookmarks are its stash. -->
+  <defs>
+    <linearGradient id="grey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d8274"/><stop offset="1" stop-color="#6e6458"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaa760"/><stop offset="1" stop-color="#d0803c"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8653a"/><stop offset="1" stop-color="#9a4f2b"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d7bff"/><stop offset="1" stop-color="#b07cff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bushy tail curling up behind, rusty-edged like a fox squirrel's -->
+  <path d="M318 300 C 410 300 452 236 444 168 C 436 100 380 58 322 70 C 276 80 262 124 286 150
+           C 306 172 344 160 344 134 C 344 118 330 112 320 116 C 352 98 400 120 404 172 C 408 228 368 262 318 262 Z" fill="#d0803c"/>
+  <path d="M318 290 C 396 288 432 232 426 172 C 420 114 376 82 330 88 C 300 92 290 118 302 134
+           C 314 150 334 142 334 128 C 352 120 386 140 388 176 C 392 222 360 252 318 252 Z" fill="url(#grey)"/>
+
+  <!-- body (the crate hides the lower half) -->
+  <ellipse cx="248" cy="262" rx="96" ry="104" fill="url(#grey)"/>
+  <ellipse cx="248" cy="282" rx="58" ry="76" fill="url(#rust)"/>
+
+  <!-- head -->
+  <path d="M196 104 L 206 52 L 234 96 Z" fill="#7d7266"/>
+  <path d="M300 104 L 290 52 L 262 96 Z" fill="#7d7266"/>
+  <path d="M204 98 L 210 68 L 226 94 Z" fill="#e7a868"/>
+  <path d="M292 98 L 286 68 L 270 94 Z" fill="#e7a868"/>
+  <ellipse cx="248" cy="150" rx="68" ry="62" fill="url(#grey)"/>
+  <ellipse cx="248" cy="180" rx="36" ry="26" fill="#f1c896"/>
+  <circle cx="222" cy="142" r="11" fill="#1f140c"/><circle cx="226" cy="138" r="3.5" fill="#fff"/>
+  <circle cx="274" cy="142" r="11" fill="#1f140c"/><circle cx="278" cy="138" r="3.5" fill="#fff"/>
+  <ellipse cx="248" cy="168" rx="9" ry="6.5" fill="#3a2414"/>
+  <path d="M240 184 q 8 7 16 0" fill="none" stroke="#7a4a24" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- the snack: an acorn held in both front paws -->
+  <ellipse cx="248" cy="252" rx="21" ry="24" fill="#a86a33"/>
+  <path d="M224 242 C 226 220 270 220 272 242 C 262 235 234 235 224 242 Z" fill="#6b4220"/>
+  <path d="M248 225 v -9" stroke="#6b4220" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="228" cy="258" rx="12" ry="14" fill="#7d7266"/>
+  <ellipse cx="268" cy="258" rx="12" ry="14" fill="#7d7266"/>
+
+  <!-- the wooden crate -->
+  <rect x="88" y="300" width="336" height="180" rx="10" fill="url(#wood)"/>
+  <rect x="88" y="300" width="336" height="24" rx="8" fill="#c9774a"/>
+  <rect x="88" y="356" width="336" height="8" fill="#7f3f22" opacity=".55"/>
+  <rect x="88" y="420" width="336" height="8" fill="#7f3f22" opacity=".55"/>
+  <rect x="88" y="300" width="34" height="180" rx="8" fill="#8b4626"/>
+  <rect x="390" y="300" width="34" height="180" rx="8" fill="#8b4626"/>
+  <!-- paws gripping the rim -->
+  <ellipse cx="200" cy="304" rx="20" ry="12" fill="#6e6458"/>
+  <ellipse cx="296" cy="304" rx="20" ry="12" fill="#6e6458"/>
+  <!-- the painted sign: a bookmark -->
+  <rect x="176" y="334" width="160" height="126" rx="8" fill="#c97a4d"/>
+  <path d="M226 348 h60 a6 6 0 0 1 6 6 v92 l-36 -22 l-36 22 v-92 a6 6 0 0 1 6 -6 z" fill="url(#ribbon)"/>
+  <!-- nail heads -->
+  <g fill="#3b2416"><circle cx="105" cy="340" r="4"/><circle cx="105" cy="400" r="4"/><circle cx="105" cy="456" r="4"/>
+    <circle cx="407" cy="340" r="4"/><circle cx="407" cy="400" r="4"/><circle cx="407" cy="456" r="4"/></g>
+</svg>
