@@ -9,7 +9,8 @@ a { color: var(--accent); }
 .lead { color: var(--muted); font-size: 18px; margin: 0 auto 20px; }
 .badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .badges span { border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--muted); }
-.soon { display: inline-block; margin-top: 12px; padding: 10px 18px; border-radius: 10px; background: var(--accent); color: #0a0b0e; font-weight: 600; }
+.soon { display: inline-block; margin-top: 12px; padding: 10px 18px; border-radius: 10px; background: var(--accent); color: #0a0b0e; font-weight: 600; text-decoration: none; }
+.soon:hover { filter: brightness(1.1); }
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 14px; max-width: 1000px; margin: 0 auto; padding: 0 16px 48px; }
 .features section { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
 .features h2 { font-size: 17px; margin: 0 0 6px; }
