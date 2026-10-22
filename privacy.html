@@ -11,11 +11,12 @@
 <main class="doc">
   <p><a href="index.html">← Bookage</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective October 17, 2026 · applies to the Bookage browser extension</p>
+  <p class="muted">Effective October 22, 2026 · applies to the Bookage browser extension</p>
 
   <h2>The short version</h2>
   <p><b>Your bookmarks never leave your browser.</b> Bookage has no servers, no accounts, no analytics,
-    no ads and no tracking. Nothing you do in it is sent to us or to anyone else.</p>
+    no ads and no tracking. Nothing you do in it is sent to us or to anyone else, except one thing you can choose to turn on:
+    carrying your choices to your other computers through your own browser account's sync, encrypted with a code only you have.</p>
 
   <h2>What it reads and stores</h2>
   <ul>
@@ -24,7 +25,8 @@
       applied to your bookmarks right away; with it off, only when you press <i>Apply</i>. It changes bookmarks only in
       response to your own actions, and <i>Undo</i> puts the last change back.</li>
     <li><b>Your choices</b> (done, Inbox, Trash, folders, renames, which folders to scan, settings): saved in the extension's own
-      storage inside your browser ("storage" permission). They are not synced or uploaded anywhere.</li>
+      storage inside your browser ("storage" permission). They are not synced or uploaded anywhere, unless you turn on
+      <i>Carry my choices</i> (below).</li>
     <li><b>Site icons</b> (Chrome, Edge, Brave and other Chromium browsers): read from the browser's own icon cache.
       No network request is made for them.</li>
   </ul>
@@ -34,12 +36,26 @@
   <ul>
     <li><b>Link checks</b> visit each of your bookmarked pages to see whether it still works, the same way your browser
       would if you opened it, but without sending your cookies or logins. The only thing those sites learn is that
-      their page was requested.</li>
+      their page was requested. Addresses on your home network (routers, printers, anything local) are never visited.</li>
     <li><b>Safety checks</b> download two public lists of known malware and phishing addresses, from
       <a href="https://urlhaus.abuse.ch/">URLhaus (abuse.ch)</a> and <a href="https://openphish.com/">OpenPhish</a>,
       and compare your bookmarks against them <b>on your device</b>. Your bookmarks are never sent to those services.</li>
   </ul>
   <p>You can leave these off; everything else works without them.</p>
+
+  <h2>Optional: carry your choices to your other computers</h2>
+  <p>Off until you turn it on (More → Carry my choices), separately on each computer. When on, Bookage keeps a summary of
+    your decisions in your browser's own sync storage, so your other computers with Bookage get them too: which bookmarks
+    are done, dismissed alerts, declined moves, which folders get scanned, and your sorting rules.</p>
+  <ul>
+    <li><b>Encrypted before it leaves your computer</b> (AES-GCM), with a random code made on your first computer that you
+      type once on the others. The code is never synced or sent anywhere, so Google, Mozilla and we cannot read the
+      summary. What the sync service can see is that an encrypted block exists, roughly how big it is, and when it changes.</li>
+    <li>Inside the encrypted summary, bookmarks are identified by a short fingerprint of their address, not the address itself.</li>
+    <li>It travels with your Google or Firefox account's sync, the same way your bookmarks do. It never reaches us.</li>
+    <li>Turning it off offers to remove the shared copy from your account. Whether a sync service keeps older copies on its
+      own servers is up to that service; they stay encrypted either way.</li>
+  </ul>
 
   <h2>Optional: on-device AI suggestions</h2>
   <p>In browsers that include a built-in AI model (currently Chrome, on capable computers), the
@@ -55,7 +71,7 @@
   </ul>
 
   <h2>Deleting your data</h2>
-  <p>Uninstalling the extension deletes everything it stored. Your browser's actual bookmarks stay exactly as they are at that moment.</p>
+  <p>Uninstalling the extension deletes everything it stored on that computer (to remove a shared copy of your choices from your browser account, turn <i>Carry my choices</i> off first and choose to remove it). Your browser's actual bookmarks stay exactly as they are at that moment.</p>
 
   <h2>Changes and contact</h2>
   <p>If this policy ever changes, the new version will be posted on this page with a new effective date.
